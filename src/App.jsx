@@ -7,28 +7,15 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    // you can only return one element, so you can use a fragment or a div
+    <div>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src="ageOfUltron.jpg" alt='ageOfUltron.jpg' width="20%" height="20%"/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <h2>Name: Marvel: Age of Ultron</h2>
+      <h3>Rating: 5.8</h3>
+      <p>Summary: Tony Stark builds an artificial intelligence system named Ultron with the help of Bruce Banner. When the sentient Ultron makes plans to wipe out the human race, the Avengers set out to stop him.</p>
+    </div>
   )
 }
 
