@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState, Fragment } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -7,12 +7,24 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    // you can only return one element, so you can use a fragment or a div
-    <div>
+    <>
       <NetflixSeries />
       <NetflixSeries />
-    </div>
+      <NetflixSeries />
+    </>
   )
+
+  // return (
+  //   // Array with Keys: 
+  //   [<NetflixSeries key="1"/>,
+  //   <NetflixSeries key="2"/>,
+  //   ]
+    // you can only return one element, so you can use a fragment or a div
+    // <div>
+    //   <NetflixSeries />
+    //   <NetflixSeries />
+    // </div>
+  // )
 }
 
 // React component
