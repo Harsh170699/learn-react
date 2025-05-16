@@ -3,12 +3,6 @@ import './App.css'
 import NetflixSeries from './components/NetflixSeries'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <NetflixSeries />
-    </>
-  )
+  return <NetflixSeries />;
 };
 export default App
