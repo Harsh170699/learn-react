@@ -32,3 +32,36 @@ Named Export: A file can have multiple named exports.
 
 Named Import: When importing named exports, the import names must watch the export names exactly.
               Named imports must be enclosed in curly braces.
+
+## Inline Styles
+Inline styles are applied directly to the HTML elements via the style attribute. This approach
+uses JS objects top to define the CSS properties and values.
+
+# 1. JS Object Syntax
+
+Inline Styles in react are specified using JS objects. Property names are written in camelCase instead of the traditional CSS kebab-case
+
+const style = {
+    backgroundColor: 'blue',
+    fontSize: '16px'
+};
+
+# 2. Units
+
+For most numeric values, you need to specify units as a string (eg: '16px'). Some properties like z-index can take numeric
+values directly
+
+const style = {
+    padding: '10px',
+    zindex: 1,
+};
+
+# 3. Performance Considerations
+
+Defining inline styles directly within the JSX can lead to performance issues because a new object is created
+on every render. To avoid this, define styles outside of the render method or as constants.
+
+const buttonStyle = {
+    backgroundColor: 'blue',
+    color: 'white'
+};
