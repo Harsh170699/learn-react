@@ -1,7 +1,8 @@
 import React, { useState, Fragment } from 'react'
 import './App.css'
 import NetflixSeries from './components/NetflixSeries'
-import './components/Netflix.css'
+// import './components/Netflix.css'
+import './components/Netflix.module.css'
 
 function App() {
   return (
