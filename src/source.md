@@ -65,3 +65,7 @@ const buttonStyle = {
     backgroundColor: 'blue',
     color: 'white'
 };
+
+## CSS Conditional stylings in Reat JS
+
+you can use ternary operators to add conditional stylings to your CSS.
