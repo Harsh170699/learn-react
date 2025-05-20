@@ -3,7 +3,7 @@ import { SeriesCard } from './SeriesCard';
 
 const NetflixSeries = () => {
   return (
-    <ul>
+    <ul className='grid grid-three--cols'>
       {seriesData.map((currEle) => (
         <SeriesCard key={currEle.id} data={currEle} />
       ))}
