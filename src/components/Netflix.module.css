@@ -8,12 +8,12 @@ img {
     width: 100%;
 }
 
-.card-content {
+/* .card-content {
     padding: 3.2rem 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-}
+} */
 
 .super_hit {
     background-color: #7dcea0;

@@ -69,3 +69,17 @@ const buttonStyle = {
 ## CSS Conditional stylings in Reat JS
 
 you can use ternary operators to add conditional stylings to your CSS.
+
+# Applying padding in TailWind
+Here are both Approaches
+
+## Extended Spacing scale
+If you have extended the spacing scale, you can use the custom classes
+
+<div class='py-23 px12'>Content</div>
+
+## Arbitrary values
+
+you can use arbitrary values directly
+
+<div class='py-[3.2rem] px-[1.2rem]'>Content</div>
