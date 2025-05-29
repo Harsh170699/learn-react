@@ -5,6 +5,7 @@ import NetflixSeries from './components/NetflixSeries'
 import './components/Netflix.module.css'
 // import { EventHandling } from './components/EventHandling';
 import { EventProps } from './components/EventProps'
+import { EventPropagation } from './components/EventPropagation'
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <h1 className='card-heading'>List of Best Netflix series</h1>
       <NetflixSeries /> */}
       {/* <EventHandling /> */}
-      <EventProps />
+      {/* <EventProps /> */}
+      <EventPropagation />
     </section>
   );
 };
