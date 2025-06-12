@@ -7,6 +7,7 @@ import './components/Netflix.module.css'
 import { EventProps } from './components/EventProps'
 import { EventPropagation } from './components/EventPropagation'
 import { State } from './components/hooks/State'
+import { DerivedState } from './components/DerivedState'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <EventHandling /> */}
       {/* <EventProps /> */}
       {/* <EventPropagation /> */}
-      <State />
+      {/* <State /> */}
+      <DerivedState />
     </section>
   );
 };
