@@ -83,3 +83,12 @@ If you have extended the spacing scale, you can use the custom classes
 you can use arbitrary values directly
 
 <div class='py-[3.2rem] px-[1.2rem]'>Content</div>
+
+-----------------------------------------------------------------------------
+
+## Detailed explanation of Toggle Switch Button
+    - State management: We will use the useState hookto manage whether the switch is on or OFF.
+    - Styling: We will use conditional styling to change the appearance of the switch based on its state.
+    - Event handling: We will handle the click event to toggle the state of the switch
+
+------------------------------------------------------------------------------
