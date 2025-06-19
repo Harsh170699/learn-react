@@ -39,6 +39,21 @@ export const ToDo = () => {
         return () => clearInterval(interval);
 
     }, []);
+
+    // ToDO handleDeleteToDo function
+    const handleDeleteToDo = (value) => {
+        console.log(task);
+        console.log(value);
+        // return those elements which are not matching with my 'value'
+        const updatedTask = task.filter((currTask) => currTask !== value);
+        setTask(updatedTask);
+    }
+
+    // TODo handleClearToDoData function
+    const handleClearToDoData = () => {
+        setTask([]);
+    }
+
     return (
         <section className='todo-container'>
             <header>
@@ -48,26 +63,27 @@ export const ToDo = () => {
             <section className='form'>
                 <form onSubmit={handleFormSubmit}>
                     <div>
-                        <input type='text' className='todo-input' autoComplete='off' value={inputValue} onChange={(event) => handleInputChange(event.target.value)}/>
+                        <input type='text' className='todo-input' autoComplete='off' value={inputValue} onChange={(event) => handleInputChange(event.target.value)} />
                     </div>
                     <div>
                         <button type='submit' className='todo-btn'>Add Task</button>
                     </div>
                 </form>
-                <section className='myUnOrdList'>
-                    <ul>
-                        {
-                            task.map((currTask, index) => {
-                                return <li key={index} className='todo-item'>
-                                    <span>{currTask}</span>
-                                    <button className='check-btn'><MdCheck /></button>
-                                    <button className='delete-btn'><MdDeleteForever /></button>
-                                </li>
-                            })
-                        }
-                    </ul>
-                </section>
             </section>
+            <section className='myUnOrdList'>
+                <ul>
+                    {
+                        task.map((currTask, index) => {
+                            return <li key={index} className='todo-item'>
+                                <span>{currTask}</span>
+                                <button className='check-btn'><MdCheck /></button>
+                                <button className='delete-btn' onClick={() => handleDeleteToDo(currTask)}><MdDeleteForever /></button>
+                            </li>
+                        })
+                    }
+                </ul>
+            </section>
+            <section className='clear-btn' onClick={handleClearToDoData}>Clear All</section>
         </section>
     );
 }
