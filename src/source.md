@@ -92,3 +92,24 @@ you can use arbitrary values directly
     - Event handling: We will handle the click event to toggle the state of the switch
 
 ------------------------------------------------------------------------------
+
+## Simple ToDo list in React
+
+# Part 1
+
+# Overview
+    - We will start with the basics of building simple ToDo list in react. We will focus on setting up the project,
+      creating components, and managing state effectively.
+
+    - Set up the react project
+    - Create the main 'ToDo' component
+    - Build 'ToDoForm' component for adding tasks
+    - Use the 'useState' hook to manage the lists of tasks
+    - Implement basic form validation to ensure tasks are not empty
+    - Discuss best practices for component structure and state management
+
+# Imp points to keep in mind
+    - Ensure your component structure is clean and maintainable
+    - Use controlled components for form inputs to handle state correctly.
+    - Keep functions simple and focussed on a single task.
+    
