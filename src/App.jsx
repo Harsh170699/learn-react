@@ -11,6 +11,7 @@ import { DerivedState } from './components/DerivedState'
 import { LiftStateup } from './components/LiftStateUp'
 import { ToggleSwitch } from './components/projects/ToggleSwitch/ToggleSwitch'
 import { ToDo } from './components/projects/ToDo/ToDo'
+import { ShortCircuit } from './components/ShortCircuit'
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       {/* <DerivedState /> */}
       {/* <LiftStateup /> */}
       {/* <ToggleSwitch /> */}
-      <ToDo />
+      {/* <ToDo /> */}
+      <ShortCircuit />
     </section>
   );
 };
