@@ -13,6 +13,7 @@
 // import { ToDo } from './components/projects/ToDo/ToDo'
 // import { ShortCircuit } from './components/ShortCircuit'
 import { Counter } from './components/hooks/useState'
+import { Challenge } from './components/hooks/useState/CHallenge';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <ToggleSwitch /> */}
       {/* <ToDo /> */}
       {/* <ShortCircuit /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Challenge />
     </section>
   );
 };
